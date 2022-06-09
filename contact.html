@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="table.html">Fee</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contact-header">
+
+      <h1>contact</h1>
+
+
+    </div>
+  </header>
+
+  <main>
+    <form  method="post">
+      <div>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name">
+      </div>
+      <div>
+          <label for="email">Your Email</label>
+          <input type="mail" id="email" name="email">
+        </div>
+        <div>          <p>Select Class</p>
+          <select name="class">
+
+            <option value="">Select</option>
+            
+            <optgroup label="Morning Class">
+            <option value="Morning-1">Beginner Class</option>
+            <option value="Morning-2">Intermediate Class</option>
+            <option value="Morning-3">Advance Class</option>
+            </optgroup>
+            
+            <optgroup label="Nignt Class">
+            <option value="night-1">Beginner Class</option>
+            <option value="night-2">Intermediate Class</option>
+            <option value="night-3">Advance Class</option>
+            </optgroup>
+            
+            </select>
+      </div>
+      <div>
+        <label for="class date">Class date:</label>
+
+<input type="date" id="class date" name="trip-start"
+       value="2022-05-1"
+       min="2022-05-01" max="2022-8-31">
+      </div>
+      <div>
+        <label for="class time">Choose Time</label>
+
+<input type="time" id="class time" name="class time"
+       min="09:00" max="18:00" required>
+
+      </div>
+      <div>
+        <label for="people">How meny people:</label>
+<input type="number" id="people" name="people" min="1" max="5">
+      </div>
+      <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+      </div>
+      <div>
+        <p>Are you beginner?<br>
+          <input type="radio" name="q1" value="yes"> yes
+          <input type="radio" name="q1" value="no"> No
+          </p>
+      </div>
+      <input type="submit" value="Send">
+      <input type="reset" value="Clear">
+  </form>
+
+
+
+  </main>
+
+  <footer>
+    copyright &copy; all rights reserved
+  </footer>
+</body>
+</html>
